@@ -1,3 +1,13 @@
-/* Your styles go here */
+/*partials*/
+@import "partials/_variables";
+@import "partials/_footer.scss";
+@import "partials/_header.scss";
+@import "partials/_about.scss";
+@import "partials/projects.scss";
+@import "partials/contact.scss";
+@import "individualpages.scss";
+
+
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";

@@ -1,0 +1,41 @@
+nav{
+    background-color: $header-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+
+    .navbar-toggler{
+        background-color: $secondary-background;
+        border: whitesmoke 3px solid;
+    }
+
+    .navbar-brand, .nav-link {
+        color: black; 
+    }
+    
+    .navbar-brand:hover, .nav-link:hover {
+        color: $header-hover;
+    }
+    
+
+    a{
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+}
+
+.hero{
+    background-image: url('/Users/sydneydouglas/Desktop/Summer 24/Web 2890/web2890-portfolio-website-Jumper4life/src/images/heroimageFPP.jpeg');
+    color: white;
+    text-align: center;
+    height: 300px;
+    align-items: center;
+    h1{
+        padding-top: 135px;
+    }
+    a{
+        padding-top: 145px;
+    }
+}
