@@ -6,6 +6,9 @@
     
     h2 {
       margin-bottom: 20px;
+      font-family: 'Helvetica Neue', sans-serif; 
+      font-weight: bold; 
+      margin-bottom: 20px;
     }
   
     .about-content {
@@ -14,21 +17,26 @@
       justify-content: center;
       
       .about-text {
-        
+        font-family: Arial, Helvetica, sans-serif;
         min-width: 300px;
-        margin: 20px;
+        margin: 10px 0;
+        line-height: 1.6;
       }
   
       .about-images {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
         
         img {
           width: 300px;
           height: 300px;
           object-fit: cover;
           margin: 10px 20px;
+          border-radius: 15px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); 
+        transition: transform 0.3s, box-shadow 0.3s;
         }
       }
     }

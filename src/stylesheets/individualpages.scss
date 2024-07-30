@@ -3,23 +3,37 @@
 main{
     background-color: $primary-background;
     padding-top: 20px;
-    
+}
+h1{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 20px 0;
     gap: 20px;
     padding: 20px;
+    
   }
   
   .gallery-item {
-    max-width: 1000px; /* Adjust the max width as needed */
+    max-width: 1000px; 
     width: 100%;
     height: auto;
-    border: black solid 3px;
+    border-radius: 15px;
+    box-shadow: 4px 8px 16px rgba(160, 32, 240, 0.9);
+    transition: transform .3s, box-shadow 0.3s;
+
+    :hover {
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
   }
   
   .description {
@@ -27,6 +41,24 @@ main{
     background-color: $secondary-background;
     color: white;
     text-align: center;
+    border-radius: 10px;
 
-  }
+    p{
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }   
+    a{
+        background-color: $primary-accent;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+
+        :hover{
+            background-color: darken($primary-accent, 20%);
+        }
+    }
+}
+  
   

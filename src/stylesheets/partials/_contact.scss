@@ -1,8 +1,29 @@
 .contact{
     background-color: $secondary-background;
     text-align: center;
-    padding: 40px 20px;
+     padding: 40px 20px;
     color: white;
+    
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    button {
+        background-color: $primary-accent;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: darken($primary-accent, 30%);
+    }
 
     h2, p{
         margin-bottom: 20px;
@@ -19,11 +40,18 @@
 
     }
 
+    .container2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
     form, .container2{
         background-color: $header-color;
         padding: 20px;
         margin: 10px;
         border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(230, 212, 237, 0.1);
         
     }
 
@@ -33,6 +61,8 @@
     }
 
     input, textarea{
+        border-radius: 5px;
+        border: 2px solid #ddd;
         margin-bottom: 10px;
         padding: 10px ;
         width: 100%;
